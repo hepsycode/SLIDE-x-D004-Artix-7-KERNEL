@@ -1,0 +1,329 @@
+ ==  Bambu executed with: bambu -O3 -falign-loops -fno-cprop-registers -fno-if-conversion -fno-peephole2 -funroll-all-loops -I/home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR-RESULTS/KERNEL_INT/kruskal/includes/values_20 --simulate --simulator=VERILATOR --clock-period=5 --device-name=xc7a100t-1csg324-VVD /home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/kruskal/frst.c 
+
+
+********************************************************************************
+                    ____                  _
+                   | __ )  __ _ _ __ ___ | |_   _   _
+                   |  _ \ / _` | '_ ` _ \| '_ \| | | |
+                   | |_) | (_| | | | | | | |_) | |_| |
+                   |____/ \__,_|_| |_| |_|_.__/ \__,_|
+
+********************************************************************************
+                         High-Level Synthesis Tool
+
+                         Politecnico di Milano - DEIB
+                          System Architectures Group
+********************************************************************************
+                Copyright (C) 2004-2020 Politecnico di Milano
+Version: PandA 0.9.7-dev - Revision 151822f6eb6b28b68ef7cde4c7c3c0add185ed9d-panda-0.9.7-dev
+
+Target technology = FPGA
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  The top function inferred from the specification is: main
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+  Functions to be synthesized:
+    is_connected
+    make_non_oriented
+    kruskal
+    main
+
+
+  Memory allocation information:
+    BRAM bitsize: 16
+    Spec may not exploit DATA bus width
+    All the data have a known address
+    Internal data may be accessed
+    DATA bus bitsize: 32
+    ADDRESS bus bitsize: 13
+    SIZE bus bitsize: 6
+    ALL pointers have been resolved
+    Internally allocated memory (no private memories): 5120
+    Internally allocated memory: 5120
+  Time to perform memory allocation: 0.00 seconds
+
+
+  Memory allocation information:
+    BRAM bitsize: 16
+    Spec may not exploit DATA bus width
+    All the data have a known address
+    Internal data may be accessed
+    DATA bus bitsize: 32
+    ADDRESS bus bitsize: 13
+    SIZE bus bitsize: 6
+    ALL pointers have been resolved
+    Internally allocated memory (no private memories): 5120
+    Internally allocated memory: 5120
+  Time to perform memory allocation: 0.01 seconds
+
+
+  Module allocation information for function is_connected:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.58 seconds
+
+
+  Module allocation information for function kruskal:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 1.22 seconds
+
+
+  Module allocation information for function make_non_oriented:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.30 seconds
+
+
+  Scheduling Information of function is_connected:
+    Number of control steps: 61
+    Minimum slack: 0.030999998999997058
+    Estimated max frequency (MHz): 201.24773592246964
+  Time to perform scheduling: 0.37 seconds
+
+
+  State Transition Graph Information of function is_connected:
+    Number of states: 59
+    Done port is registered
+  Time to perform creation of STG: 0.02 seconds
+
+
+  Scheduling Information of function kruskal:
+    Number of control steps: 247
+    Minimum slack: 0.0027999989999561992
+    Estimated max frequency (MHz): 200.11206271509627
+  Time to perform scheduling: 0.78 seconds
+
+
+  State Transition Graph Information of function kruskal:
+    Number of states: 245
+    Done port is registered
+  Time to perform creation of STG: 0.04 seconds
+
+
+  Scheduling Information of function make_non_oriented:
+    Number of control steps: 94
+    Minimum slack: 0.030999998999997058
+    Estimated max frequency (MHz): 201.24773592246964
+  Time to perform scheduling: 0.16 seconds
+
+
+  State Transition Graph Information of function make_non_oriented:
+    Number of states: 92
+    Done port is registered
+  Time to perform creation of STG: 0.01 seconds
+
+
+  Easy binding information for function is_connected:
+    Bound operations:310/485
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function kruskal:
+    Bound operations:1040/1434
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function make_non_oriented:
+    Bound operations:277/371
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function is_connected:
+    Number of storage values inserted: 197
+  Time to compute storage value information: 0.00 seconds
+
+
+  Storage Value Information of function kruskal:
+    Number of storage values inserted: 832
+  Time to compute storage value information: 0.00 seconds
+
+
+  Storage Value Information of function make_non_oriented:
+    Number of storage values inserted: 183
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function is_connected:
+    Register allocation algorithm obtains a sub-optimal result: 195 registers(LB:48)
+  Time to perform register binding: 0.14 seconds
+
+
+  Register binding information for function is_connected:
+    Register allocation algorithm obtains a sub-optimal result: 195 registers(LB:48)
+  Time to perform register binding: 0.14 seconds
+
+
+  Module binding information for function is_connected:
+    Number of modules instantiated: 469
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 1560
+    Estimated area of MUX21: 266
+    Total estimated area: 1826
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.14 seconds
+    Clique covering computation completed in 0.14 seconds
+  Time to perform module binding: 0.30 seconds
+
+
+  Register binding information for function is_connected:
+    Register allocation algorithm obtains a sub-optimal result: 195 registers(LB:48)
+  Time to perform register binding: 0.14 seconds
+
+
+  Connection Binding Information for function is_connected:
+    Number of allocated multiplexers (2-to-1 equivalent): 40
+  Time to perform interconnection binding: 0.03 seconds
+
+  Total number of flip-flops in function is_connected: 612
+
+  Register binding information for function kruskal:
+    Register allocation algorithm obtains a sub-optimal result: 685 registers(LB:148)
+  Time to perform register binding: 2.62 seconds
+
+
+  Register binding information for function kruskal:
+    Register allocation algorithm obtains a sub-optimal result: 787 registers(LB:148)
+  Time to perform register binding: 2.52 seconds
+
+
+  Register binding information for function kruskal:
+    Register allocation algorithm obtains a sub-optimal result: 787 registers(LB:148)
+  Time to perform register binding: 2.54 seconds
+
+
+  Module binding information for function kruskal:
+    Number of modules instantiated: 1341
+    Number of possible conflicts for possible false paths introduced by resource sharing: 591
+    Estimated resources area (no Muxes and address logic): 12280
+    Estimated area of MUX21: 887.66666666666663
+    Total estimated area: 13167.666666666666
+    Estimated number of DSPs: 0
+    Slack computed in 0.02 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 2.67 seconds
+    Clique covering computation completed in 5.15 seconds
+  Time to perform module binding: 7.88 seconds
+
+
+  Register binding information for function kruskal:
+    Register allocation algorithm obtains a sub-optimal result: 787 registers(LB:148)
+  Time to perform register binding: 2.54 seconds
+
+
+  Connection Binding Information for function kruskal:
+    Number of allocated multiplexers (2-to-1 equivalent): 204
+  Time to perform interconnection binding: 0.09 seconds
+
+  Total number of flip-flops in function kruskal: 2885
+
+  Register binding information for function make_non_oriented:
+    Register allocation algorithm obtains a sub-optimal result: 164 registers(LB:91)
+  Time to perform register binding: 0.05 seconds
+
+
+  Register binding information for function make_non_oriented:
+    Register allocation algorithm obtains a sub-optimal result: 149 registers(LB:91)
+  Time to perform register binding: 0.05 seconds
+
+
+  Register binding information for function make_non_oriented:
+    Register allocation algorithm obtains a sub-optimal result: 149 registers(LB:91)
+  Time to perform register binding: 0.06 seconds
+
+
+  Module binding information for function make_non_oriented:
+    Number of modules instantiated: 320
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 1504
+    Estimated area of MUX21: 714.33333333333337
+    Total estimated area: 2218.3333333333335
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.07 seconds
+    Clique covering computation completed in 0.17 seconds
+  Time to perform module binding: 0.27 seconds
+
+
+  Register binding information for function make_non_oriented:
+    Register allocation algorithm obtains a sub-optimal result: 149 registers(LB:91)
+  Time to perform register binding: 0.06 seconds
+
+
+  Connection Binding Information for function make_non_oriented:
+    Number of allocated multiplexers (2-to-1 equivalent): 106
+  Time to perform interconnection binding: 0.01 seconds
+
+  Total number of flip-flops in function make_non_oriented: 1213
+
+  Module allocation information for function main:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.03 seconds
+
+
+  Scheduling Information of function main:
+    Number of control steps: 12
+    Minimum slack: 1.1102230246251565e-16
+    Estimated max frequency (MHz): 200
+  Time to perform scheduling: 0.00 seconds
+
+
+  State Transition Graph Information of function main:
+    Number of states: 13
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function main:
+    Bound operations:18/23
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function main:
+    Number of storage values inserted: 7
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function main:
+    Register allocation algorithm obtains a sub-optimal result: 7 registers(LB:6)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function main:
+    Register allocation algorithm obtains a sub-optimal result: 7 registers(LB:6)
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function main:
+    Number of modules instantiated: 20
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 7880
+    Estimated area of MUX21: 165
+    Total estimated area: 8045
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.01 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.01 seconds
+
+
+  Register binding information for function main:
+    Register allocation algorithm obtains a sub-optimal result: 7 registers(LB:6)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function main:
+    Number of allocated multiplexers (2-to-1 equivalent): 7
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function main: 67
+[0mWarning: XML file "/home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR-RESULTS/KERNEL_INT/kruskal/files/values_20/test.xml" cannot be opened, creating a stub with random values
+Warning: Simulation completed but it is not possible to determine if it is correct!
+  Total cycles             : 1950 cycles
+  Number of executions     : 1
+  Average execution        : 1950 cycles

@@ -1,0 +1,560 @@
+ ==  Bambu executed with: bambu -O1 -fcse-follow-jumps -fno-tree-ter -ftree-vectorize -I/home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR-RESULTS/KERNEL_INT/kruskal/includes/values_33 --simulate --simulator=VERILATOR --clock-period=5 --device-name=xc7a100t-1csg324-VVD /home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/kruskal/frst.c 
+
+
+********************************************************************************
+                    ____                  _
+                   | __ )  __ _ _ __ ___ | |_   _   _
+                   |  _ \ / _` | '_ ` _ \| '_ \| | | |
+                   | |_) | (_| | | | | | | |_) | |_| |
+                   |____/ \__,_|_| |_| |_|_.__/ \__,_|
+
+********************************************************************************
+                         High-Level Synthesis Tool
+
+                         Politecnico di Milano - DEIB
+                          System Architectures Group
+********************************************************************************
+                Copyright (C) 2004-2020 Politecnico di Milano
+Version: PandA 0.9.7-dev - Revision 151822f6eb6b28b68ef7cde4c7c3c0add185ed9d-panda-0.9.7-dev
+
+Target technology = FPGA
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  The top function inferred from the specification is: main
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+  Functions to be synthesized:
+    is_connected
+    find_min
+    make_non_oriented
+    init_union_find
+    union_sets
+    count_edges
+    kruskal
+    main
+
+
+  Memory allocation information:
+    BRAM bitsize: 64
+    Spec may not exploit DATA bus width
+    All the data have a known address
+    Internal data may be accessed
+    DATA bus bitsize: 128
+    ADDRESS bus bitsize: 13
+    SIZE bus bitsize: 8
+    ALL pointers have been resolved
+    Internally allocated memory (no private memories): 5120
+    Internally allocated memory: 5120
+  Time to perform memory allocation: 0.00 seconds
+
+
+  Module allocation information for function count_edges:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.05 seconds
+
+
+  Module allocation information for function find_min:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.08 seconds
+
+
+  Module allocation information for function init_union_find:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.01 seconds
+
+
+  Module allocation information for function is_connected:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.05 seconds
+
+
+  Module allocation information for function make_non_oriented:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.08 seconds
+
+
+  Module allocation information for function union_sets:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.03 seconds
+
+
+  Scheduling Information of function count_edges:
+    Number of control steps: 11
+    Minimum slack: 0.23704999900000179
+    Estimated max frequency (MHz): 209.95391507155153
+  Time to perform scheduling: 0.03 seconds
+
+
+  State Transition Graph Information of function count_edges:
+    Number of states: 9
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function find_min:
+    Number of control steps: 17
+    Minimum slack: 0.26799999599998092
+    Estimated max frequency (MHz): 211.32713422542
+  Time to perform scheduling: 0.04 seconds
+
+
+  State Transition Graph Information of function find_min:
+    Number of states: 15
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function init_union_find:
+    Number of control steps: 4
+    Minimum slack: 0.10699999900000112
+    Estimated max frequency (MHz): 204.37359488976631
+  Time to perform scheduling: 0.00 seconds
+
+
+  State Transition Graph Information of function init_union_find:
+    Number of states: 2
+    Minimum number of cycles: 2
+    Maximum number of cycles 2
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function is_connected:
+    Number of control steps: 14
+    Minimum slack: 0.63804999900000159
+    Estimated max frequency (MHz): 229.25526422144799
+  Time to perform scheduling: 0.03 seconds
+
+
+  State Transition Graph Information of function is_connected:
+    Number of states: 12
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function make_non_oriented:
+    Number of control steps: 14
+    Minimum slack: 0.33399999800001201
+    Estimated max frequency (MHz): 214.31633081255248
+  Time to perform scheduling: 0.03 seconds
+
+
+  State Transition Graph Information of function make_non_oriented:
+    Number of states: 12
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function union_sets:
+    Number of control steps: 15
+    Minimum slack: 0.041999996999999678
+    Estimated max frequency (MHz): 201.6942314229361
+  Time to perform scheduling: 0.01 seconds
+
+
+  State Transition Graph Information of function union_sets:
+    Number of states: 13
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function count_edges:
+    Bound operations:80/90
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function find_min:
+    Bound operations:104/138
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function init_union_find:
+    Bound operations:9/11
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function is_connected:
+    Bound operations:93/106
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function make_non_oriented:
+    Bound operations:71/101
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function union_sets:
+    Bound operations:40/49
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function count_edges:
+    Number of storage values inserted: 24
+  Time to compute storage value information: 0.00 seconds
+
+
+  Storage Value Information of function find_min:
+    Number of storage values inserted: 54
+  Time to compute storage value information: 0.00 seconds
+
+
+  Storage Value Information of function init_union_find:
+    Number of storage values inserted: 1
+  Time to compute storage value information: 0.00 seconds
+
+
+  Storage Value Information of function is_connected:
+    Number of storage values inserted: 27
+  Time to compute storage value information: 0.00 seconds
+
+
+  Storage Value Information of function make_non_oriented:
+    Number of storage values inserted: 34
+  Time to compute storage value information: 0.00 seconds
+
+
+  Storage Value Information of function union_sets:
+    Number of storage values inserted: 16
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function count_edges:
+    Register allocation algorithm obtains a sub-optimal result: 18 registers(LB:14)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function count_edges:
+    Register allocation algorithm obtains a sub-optimal result: 18 registers(LB:14)
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function count_edges:
+    Number of modules instantiated: 90
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 245
+    Estimated area of MUX21: 99
+    Total estimated area: 344
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function count_edges:
+    Register allocation algorithm obtains a sub-optimal result: 18 registers(LB:14)
+  Time to perform register binding: 0.01 seconds
+
+
+  Connection Binding Information for function count_edges:
+    Number of allocated multiplexers (2-to-1 equivalent): 12
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function count_edges: 125
+
+  Register binding information for function find_min:
+    Register allocation algorithm obtains a sub-optimal result: 45 registers(LB:30)
+  Time to perform register binding: 0.01 seconds
+
+
+  Register binding information for function find_min:
+    Register allocation algorithm obtains a sub-optimal result: 46 registers(LB:30)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function find_min:
+    Register allocation algorithm obtains a sub-optimal result: 46 registers(LB:30)
+  Time to perform register binding: 0.01 seconds
+
+
+  Module binding information for function find_min:
+    Number of modules instantiated: 136
+    Number of possible conflicts for possible false paths introduced by resource sharing: 10
+    Estimated resources area (no Muxes and address logic): 1308
+    Estimated area of MUX21: 198
+    Total estimated area: 1506
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.01 seconds
+    Clique covering computation completed in 0.01 seconds
+  Time to perform module binding: 0.02 seconds
+
+
+  Register binding information for function find_min:
+    Register allocation algorithm obtains a sub-optimal result: 46 registers(LB:30)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function find_min:
+    Number of allocated multiplexers (2-to-1 equivalent): 29
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function find_min: 247
+
+  Register binding information for function init_union_find:
+    Register allocation algorithm obtains an optimal result: 1 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function init_union_find:
+    Register allocation algorithm obtains an optimal result: 1 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function init_union_find:
+    Number of modules instantiated: 11
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 17
+    Estimated area of MUX21: 99
+    Total estimated area: 116
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function init_union_find:
+    Register allocation algorithm obtains an optimal result: 1 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function init_union_find:
+    Number of allocated multiplexers (2-to-1 equivalent): 3
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function init_union_find: 11
+  All registers are without enable: function pipelining may come for free
+
+  Register binding information for function is_connected:
+    Register allocation algorithm obtains a sub-optimal result: 23 registers(LB:22)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function is_connected:
+    Register allocation algorithm obtains a sub-optimal result: 23 registers(LB:22)
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function is_connected:
+    Number of modules instantiated: 105
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 257
+    Estimated area of MUX21: 99
+    Total estimated area: 356
+    Estimated number of DSPs: 0
+    Slack computed in 0.01 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.01 seconds
+
+
+  Register binding information for function is_connected:
+    Register allocation algorithm obtains a sub-optimal result: 23 registers(LB:22)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function is_connected:
+    Number of allocated multiplexers (2-to-1 equivalent): 11
+  Time to perform interconnection binding: 0.01 seconds
+
+  Total number of flip-flops in function is_connected: 118
+
+  Register binding information for function make_non_oriented:
+    Register allocation algorithm obtains a sub-optimal result: 28 registers(LB:26)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function make_non_oriented:
+    Register allocation algorithm obtains a sub-optimal result: 30 registers(LB:26)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function make_non_oriented:
+    Register allocation algorithm obtains a sub-optimal result: 30 registers(LB:26)
+  Time to perform register binding: 0.01 seconds
+
+
+  Module binding information for function make_non_oriented:
+    Number of modules instantiated: 98
+    Number of possible conflicts for possible false paths introduced by resource sharing: 2
+    Estimated resources area (no Muxes and address logic): 302
+    Estimated area of MUX21: 99
+    Total estimated area: 401
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.01 seconds
+  Time to perform module binding: 0.01 seconds
+
+
+  Register binding information for function make_non_oriented:
+    Register allocation algorithm obtains a sub-optimal result: 30 registers(LB:26)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function make_non_oriented:
+    Number of allocated multiplexers (2-to-1 equivalent): 10
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function make_non_oriented: 166
+
+  Register binding information for function union_sets:
+    Register allocation algorithm obtains a sub-optimal result: 13 registers(LB:10)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function union_sets:
+    Register allocation algorithm obtains a sub-optimal result: 14 registers(LB:10)
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function union_sets:
+    Number of modules instantiated: 47
+    Number of possible conflicts for possible false paths introduced by resource sharing: 2
+    Estimated resources area (no Muxes and address logic): 128
+    Estimated area of MUX21: 99
+    Total estimated area: 227
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function union_sets:
+    Register allocation algorithm obtains a sub-optimal result: 14 registers(LB:10)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function union_sets:
+    Number of allocated multiplexers (2-to-1 equivalent): 6
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function union_sets: 128
+
+  Module allocation information for function kruskal:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.08 seconds
+
+
+  Scheduling Information of function kruskal:
+    Number of control steps: 19
+    Minimum slack: 1.1102230246251565e-16
+    Estimated max frequency (MHz): 200
+  Time to perform scheduling: 0.04 seconds
+
+
+  State Transition Graph Information of function kruskal:
+    Number of states: 20
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function kruskal:
+    Bound operations:70/101
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function kruskal:
+    Number of storage values inserted: 39
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function kruskal:
+    Register allocation algorithm obtains a sub-optimal result: 37 registers(LB:26)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function kruskal:
+    Register allocation algorithm obtains a sub-optimal result: 39 registers(LB:26)
+  Time to perform register binding: 0.01 seconds
+
+
+  Module binding information for function kruskal:
+    Number of modules instantiated: 98
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 9126
+    Estimated area of MUX21: 165
+    Total estimated area: 9291
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.01 seconds
+  Time to perform module binding: 0.01 seconds
+
+
+  Register binding information for function kruskal:
+    Register allocation algorithm obtains a sub-optimal result: 39 registers(LB:26)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function kruskal:
+    Number of allocated multiplexers (2-to-1 equivalent): 5
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function kruskal: 232
+
+  Module allocation information for function main:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.02 seconds
+
+
+  Scheduling Information of function main:
+    Number of control steps: 9
+    Minimum slack: 1.1102230246251565e-16
+    Estimated max frequency (MHz): 200
+  Time to perform scheduling: 0.00 seconds
+
+
+  State Transition Graph Information of function main:
+    Number of states: 11
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function main:
+    Bound operations:10/10
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function main:
+    Number of storage values inserted: 1
+  Time to compute storage value information: 0.00 seconds
+
+
+  Module binding information for function main:
+    Number of modules instantiated: 10
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 8001
+    Estimated area of MUX21: 0
+    Total estimated area: 8001
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function main:
+    Register allocation algorithm obtains an optimal result: 1 registers
+  Time to perform register binding: 0.00 seconds
+
+  Total number of flip-flops in function main: 1
+[0mWarning: XML file "/home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR-RESULTS/KERNEL_INT/kruskal/files/values_33/test.xml" cannot be opened, creating a stub with random values
+Warning: Simulation completed but it is not possible to determine if it is correct!
+  Total cycles             : 2608 cycles
+  Number of executions     : 1
+  Average execution        : 2608 cycles

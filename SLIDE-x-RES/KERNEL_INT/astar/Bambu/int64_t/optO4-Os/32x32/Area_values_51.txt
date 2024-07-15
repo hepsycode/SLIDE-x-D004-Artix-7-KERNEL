@@ -1,0 +1,510 @@
+ ==  Bambu executed with: bambu -Os -I/home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR-RESULTS/KERNEL_INT/astar/includes/values_51 --simulate --simulator=VERILATOR --clock-period=5 --device-name=xc7a100t-1csg324-VVD /home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/astar/frst.c 
+
+
+********************************************************************************
+                    ____                  _
+                   | __ )  __ _ _ __ ___ | |_   _   _
+                   |  _ \ / _` | '_ ` _ \| '_ \| | | |
+                   | |_) | (_| | | | | | | |_) | |_| |
+                   |____/ \__,_|_| |_| |_|_.__/ \__,_|
+
+********************************************************************************
+                         High-Level Synthesis Tool
+
+                         Politecnico di Milano - DEIB
+                          System Architectures Group
+********************************************************************************
+                Copyright (C) 2004-2020 Politecnico di Milano
+Version: PandA 0.9.7-dev - Revision 151822f6eb6b28b68ef7cde4c7c3c0add185ed9d-panda-0.9.7-dev
+
+Target technology = FPGA
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  The top function inferred from the specification is: main
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+  Functions to be synthesized:
+    init_camefrom
+    insert
+    remove_min
+    set_estimates
+    astarF
+    astar
+    main
+
+
+  Memory allocation information:
+    BRAM bitsize: 32
+    Spec may not exploit DATA bus width
+    All the data have a known address
+    Internal data may be accessed
+    DATA bus bitsize: 64
+    ADDRESS bus bitsize: 12
+    SIZE bus bitsize: 7
+    Internally allocated memory (no private memories): 2048
+    Internally allocated memory: 2048
+  Time to perform memory allocation: 0.01 seconds
+
+
+  Memory allocation information:
+    BRAM bitsize: 32
+    Spec may not exploit DATA bus width
+    All the data have a known address
+    Internal data may be accessed
+    DATA bus bitsize: 64
+    ADDRESS bus bitsize: 12
+    SIZE bus bitsize: 7
+    Internally allocated memory (no private memories): 2048
+    Internally allocated memory: 2048
+  Time to perform memory allocation: 0.00 seconds
+
+
+  Module allocation information for function init_camefrom:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.02 seconds
+
+
+  Module allocation information for function insert:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.02 seconds
+
+
+  Module allocation information for function remove_min:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.04 seconds
+
+
+  Module allocation information for function set_estimates:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.05 seconds
+
+
+  Scheduling Information of function init_camefrom:
+    Number of control steps: 4
+    Minimum slack: 0.41299999900000028
+    Estimated max frequency (MHz): 218.00741220448936
+  Time to perform scheduling: 0.00 seconds
+
+
+  State Transition Graph Information of function init_camefrom:
+    Number of states: 2
+    Minimum number of cycles: 2
+    Maximum number of cycles 2
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function insert:
+    Number of control steps: 6
+    Minimum slack: 0.41299999999999859
+    Estimated max frequency (MHz): 218.00741225201651
+  Time to perform scheduling: 0.00 seconds
+
+
+  State Transition Graph Information of function insert:
+    Number of states: 5
+    Minimum number of cycles: 5
+    Maximum number of cycles 5
+    Parameters are registered
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function remove_min:
+    Number of control steps: 14
+    Minimum slack: 0.412999997000009
+    Estimated max frequency (MHz): 218.00741210943531
+  Time to perform scheduling: 0.00 seconds
+
+
+  State Transition Graph Information of function remove_min:
+    Number of states: 13
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function set_estimates:
+    Number of control steps: 9
+    Minimum slack: 0.41299999900000028
+    Estimated max frequency (MHz): 218.00741220448936
+  Time to perform scheduling: 0.01 seconds
+
+
+  State Transition Graph Information of function set_estimates:
+    Number of states: 7
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function init_camefrom:
+    Bound operations:7/9
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function insert:
+    Bound operations:12/14
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function remove_min:
+    Bound operations:37/48
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function set_estimates:
+    Bound operations:34/44
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function init_camefrom:
+    Number of storage values inserted: 1
+  Time to compute storage value information: 0.00 seconds
+
+
+  Storage Value Information of function insert:
+    Number of storage values inserted: 4
+  Time to compute storage value information: 0.00 seconds
+
+
+  Storage Value Information of function remove_min:
+    Number of storage values inserted: 18
+  Time to compute storage value information: 0.00 seconds
+
+
+  Storage Value Information of function set_estimates:
+    Number of storage values inserted: 12
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function init_camefrom:
+    Register allocation algorithm obtains an optimal result: 1 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function init_camefrom:
+    Register allocation algorithm obtains an optimal result: 1 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function init_camefrom:
+    Number of modules instantiated: 9
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 15
+    Estimated area of MUX21: 99
+    Total estimated area: 114
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function init_camefrom:
+    Register allocation algorithm obtains an optimal result: 1 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function init_camefrom:
+    Number of allocated multiplexers (2-to-1 equivalent): 3
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function init_camefrom: 11
+  All registers are without enable: function pipelining may come for free
+
+  Register binding information for function insert:
+    Register allocation algorithm obtains a sub-optimal result: 4 registers(LB:2)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function insert:
+    Register allocation algorithm obtains a sub-optimal result: 4 registers(LB:2)
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function insert:
+    Number of modules instantiated: 14
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 61
+    Estimated area of MUX21: 33
+    Total estimated area: 94
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function insert:
+    Register allocation algorithm obtains a sub-optimal result: 4 registers(LB:2)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function insert:
+    Number of allocated multiplexers (2-to-1 equivalent): 1
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function insert: 151
+
+  Register binding information for function remove_min:
+    Register allocation algorithm obtains a sub-optimal result: 16 registers(LB:11)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function remove_min:
+    Register allocation algorithm obtains a sub-optimal result: 17 registers(LB:11)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function remove_min:
+    Register allocation algorithm obtains a sub-optimal result: 17 registers(LB:11)
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function remove_min:
+    Number of modules instantiated: 47
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 293
+    Estimated area of MUX21: 99
+    Total estimated area: 392
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function remove_min:
+    Register allocation algorithm obtains a sub-optimal result: 17 registers(LB:11)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function remove_min:
+    Number of allocated multiplexers (2-to-1 equivalent): 10
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function remove_min: 354
+
+  Register binding information for function set_estimates:
+    Register allocation algorithm obtains a sub-optimal result: 10 registers(LB:8)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function set_estimates:
+    Register allocation algorithm obtains a sub-optimal result: 10 registers(LB:8)
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function set_estimates:
+    Number of modules instantiated: 44
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 114
+    Estimated area of MUX21: 132
+    Total estimated area: 246
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function set_estimates:
+    Register allocation algorithm obtains a sub-optimal result: 10 registers(LB:8)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function set_estimates:
+    Number of allocated multiplexers (2-to-1 equivalent): 7
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function set_estimates: 65
+
+  Module allocation information for function astarF:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.17 seconds
+
+
+  Scheduling Information of function astarF:
+    Number of control steps: 39
+    Minimum slack: 1.1102230246251565e-16
+    Estimated max frequency (MHz): 200
+  Time to perform scheduling: 0.08 seconds
+
+
+  State Transition Graph Information of function astarF:
+    Number of states: 42
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function astarF:
+    Bound operations:172/212
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function astarF:
+    Number of storage values inserted: 123
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function astarF:
+    Register allocation algorithm obtains a sub-optimal result: 118 registers(LB:70)
+  Time to perform register binding: 0.01 seconds
+
+
+  Register binding information for function astarF:
+    Register allocation algorithm obtains a sub-optimal result: 122 registers(LB:70)
+  Time to perform register binding: 0.02 seconds
+
+
+  Module binding information for function astarF:
+    Number of modules instantiated: 207
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 10762
+    Estimated area of MUX21: 165
+    Total estimated area: 10927
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.02 seconds
+    Clique covering computation completed in 0.02 seconds
+  Time to perform module binding: 0.04 seconds
+
+
+  Register binding information for function astarF:
+    Register allocation algorithm obtains a sub-optimal result: 122 registers(LB:70)
+  Time to perform register binding: 0.02 seconds
+
+
+  Connection Binding Information for function astarF:
+    Number of allocated multiplexers (2-to-1 equivalent): 6
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function astarF: 973
+
+  Module allocation information for function astar:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.10 seconds
+
+
+  Scheduling Information of function astar:
+    Number of control steps: 22
+    Minimum slack: 1.8873791418627661e-15
+    Estimated max frequency (MHz): 200.00000000000009
+  Time to perform scheduling: 0.02 seconds
+
+
+  State Transition Graph Information of function astar:
+    Number of states: 22
+    Done port is registered
+  Time to perform creation of STG: 0.01 seconds
+
+
+  Easy binding information for function astar:
+    Bound operations:60/100
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function astar:
+    Number of storage values inserted: 31
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function astar:
+    Register allocation algorithm obtains a sub-optimal result: 23 registers(LB:18)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function astar:
+    Register allocation algorithm obtains a sub-optimal result: 25 registers(LB:18)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function astar:
+    Register allocation algorithm obtains a sub-optimal result: 25 registers(LB:18)
+  Time to perform register binding: 0.01 seconds
+
+
+  Module binding information for function astar:
+    Number of modules instantiated: 94
+    Number of possible conflicts for possible false paths introduced by resource sharing: 1
+    Estimated resources area (no Muxes and address logic): 3711
+    Estimated area of MUX21: 165
+    Total estimated area: 3876
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.01 seconds
+  Time to perform module binding: 0.01 seconds
+
+
+  Register binding information for function astar:
+    Register allocation algorithm obtains a sub-optimal result: 25 registers(LB:18)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function astar:
+    Number of allocated multiplexers (2-to-1 equivalent): 13
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function astar: 311
+
+  Module allocation information for function main:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.02 seconds
+
+
+  Scheduling Information of function main:
+    Number of control steps: 4
+    Minimum slack: 1.1102230246251565e-16
+    Estimated max frequency (MHz): 200
+  Time to perform scheduling: 0.00 seconds
+
+
+  State Transition Graph Information of function main:
+    Number of states: 3
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function main:
+    Bound operations:4/4
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function main:
+    Number of storage values inserted: 0
+  Time to compute storage value information: 0.00 seconds
+
+
+  Module binding information for function main:
+    Number of modules instantiated: 4
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 2000
+    Estimated area of MUX21: 0
+    Total estimated area: 2000
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function main:
+    Register allocation algorithm obtains an optimal result: 0 registers
+  Time to perform register binding: 0.00 seconds
+
+  Total number of flip-flops in function main: 0
+[0mWarning: XML file "/home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR-RESULTS/KERNEL_INT/astar/files/values_51/test.xml" cannot be opened, creating a stub with random values
+Warning: Simulation completed but it is not possible to determine if it is correct!
+  Total cycles             : 363 cycles
+  Number of executions     : 1
+  Average execution        : 363 cycles

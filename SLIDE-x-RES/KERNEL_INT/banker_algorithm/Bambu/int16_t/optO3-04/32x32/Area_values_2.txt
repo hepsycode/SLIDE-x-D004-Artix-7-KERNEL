@@ -1,0 +1,278 @@
+ ==  Bambu executed with: bambu -O3 -fno-inline-functions-called-once -fno-regmove -frename-registers -fno-tree-copyrename -I/home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR-RESULTS/KERNEL_INT/banker_algorithm/includes/values_2 --simulate --simulator=VERILATOR --clock-period=5 --device-name=xc7a100t-1csg324-VVD /home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c 
+
+
+********************************************************************************
+                    ____                  _
+                   | __ )  __ _ _ __ ___ | |_   _   _
+                   |  _ \ / _` | '_ ` _ \| '_ \| | | |
+                   | |_) | (_| | | | | | | |_) | |_| |
+                   |____/ \__,_|_| |_| |_|_.__/ \__,_|
+
+********************************************************************************
+                         High-Level Synthesis Tool
+
+                         Politecnico di Milano - DEIB
+                          System Architectures Group
+********************************************************************************
+                Copyright (C) 2004-2020 Politecnico di Milano
+Version: PandA 0.9.7-dev - Revision 151822f6eb6b28b68ef7cde4c7c3c0add185ed9d-panda-0.9.7-dev
+
+Target technology = FPGA
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  The top function inferred from the specification is: main
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+  Functions to be synthesized:
+    create_needs
+    banker_algorithm
+    main
+
+
+  Memory allocation information:
+    BRAM bitsize: 8
+    Spec may not exploit DATA bus width
+    All the data have a known address
+    Internal data may be accessed
+    DATA bus bitsize: 16
+    ADDRESS bus bitsize: 11
+    SIZE bus bitsize: 5
+    ALL pointers have been resolved
+    Internally allocated memory (no private memories): 1792
+    Internally allocated memory: 1792
+  Time to perform memory allocation: 0.01 seconds
+
+
+  Memory allocation information:
+    BRAM bitsize: 8
+    Spec may not exploit DATA bus width
+    All the data have a known address
+    Internal data may be accessed
+    DATA bus bitsize: 16
+    ADDRESS bus bitsize: 11
+    SIZE bus bitsize: 5
+    ALL pointers have been resolved
+    Internally allocated memory (no private memories): 1792
+    Internally allocated memory: 1792
+  Time to perform memory allocation: 0.01 seconds
+
+
+  Module allocation information for function banker_algorithm:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.55 seconds
+
+
+  Module allocation information for function create_needs:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 1.81 seconds
+
+
+  Scheduling Information of function banker_algorithm:
+    Number of control steps: 143
+    Minimum slack: 0.84159999200003643
+    Estimated max frequency (MHz): 240.47710611682183
+  Time to perform scheduling: 0.14 seconds
+
+
+  State Transition Graph Information of function banker_algorithm:
+    Number of states: 141
+    Done port is registered
+  Time to perform creation of STG: 0.01 seconds
+
+
+  Scheduling Information of function create_needs:
+    Number of control steps: 47
+    Minimum slack: 1.2427999970000005
+    Estimated max frequency (MHz): 266.15564761033033
+  Time to perform scheduling: 4.78 seconds
+
+
+  State Transition Graph Information of function create_needs:
+    Number of states: 45
+    Minimum number of cycles: 45
+    Maximum number of cycles 45
+    Done port is registered
+  Time to perform creation of STG: 0.25 seconds
+
+
+  Easy binding information for function banker_algorithm:
+    Bound operations:218/393
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function create_needs:
+    Bound operations:663/989
+  Time to perform easy binding: 0.01 seconds
+
+
+  Storage Value Information of function banker_algorithm:
+    Number of storage values inserted: 206
+  Time to compute storage value information: 0.00 seconds
+
+
+  Storage Value Information of function create_needs:
+    Number of storage values inserted: 487
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function banker_algorithm:
+    Register allocation algorithm obtains a sub-optimal result: 157 registers(LB:135)
+  Time to perform register binding: 0.05 seconds
+
+
+  Register binding information for function banker_algorithm:
+    Register allocation algorithm obtains a sub-optimal result: 173 registers(LB:135)
+  Time to perform register binding: 0.05 seconds
+
+
+  Module binding information for function banker_algorithm:
+    Number of modules instantiated: 265
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 4615
+    Estimated area of MUX21: 1583.1666666666665
+    Total estimated area: 6198.1666666666661
+    Estimated number of DSPs: 0
+    Slack computed in 0.01 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.08 seconds
+    Clique covering computation completed in 0.11 seconds
+  Time to perform module binding: 0.20 seconds
+
+
+  Register binding information for function banker_algorithm:
+    Register allocation algorithm obtains a sub-optimal result: 173 registers(LB:135)
+  Time to perform register binding: 0.05 seconds
+
+
+  Connection Binding Information for function banker_algorithm:
+    Number of allocated multiplexers (2-to-1 equivalent): 241
+  Time to perform interconnection binding: 0.02 seconds
+
+  Total number of flip-flops in function banker_algorithm: 1822
+
+  Register binding information for function create_needs:
+    Register allocation algorithm obtains a sub-optimal result: 250 registers(LB:244)
+  Time to perform register binding: 1.93 seconds
+
+
+  Register binding information for function create_needs:
+    Register allocation algorithm obtains a sub-optimal result: 250 registers(LB:244)
+  Time to perform register binding: 0.85 seconds
+
+
+  Register binding information for function create_needs:
+    Register allocation algorithm obtains a sub-optimal result: 252 registers(LB:244)
+  Time to perform register binding: 0.79 seconds
+
+
+  Register binding information for function create_needs:
+    Register allocation algorithm obtains a sub-optimal result: 250 registers(LB:244)
+  Time to perform register binding: 0.85 seconds
+
+
+  Register binding information for function create_needs:
+    Register allocation algorithm obtains a sub-optimal result: 252 registers(LB:244)
+  Time to perform register binding: 0.79 seconds
+
+
+  Register binding information for function create_needs:
+    Register allocation algorithm obtains a sub-optimal result: 250 registers(LB:244)
+  Time to perform register binding: 0.85 seconds
+
+
+  Register binding information for function create_needs:
+    Register allocation algorithm obtains a sub-optimal result: 252 registers(LB:244)
+  Time to perform register binding: 0.80 seconds
+
+
+  Register binding information for function create_needs:
+    Register allocation algorithm obtains a sub-optimal result: 250 registers(LB:244)
+  Time to perform register binding: 0.85 seconds
+
+
+  Register binding information for function create_needs:
+    Register allocation algorithm obtains a sub-optimal result: 252 registers(LB:244)
+  Time to perform register binding: 0.79 seconds
+
+
+  Register binding information for function create_needs:
+    Register allocation algorithm obtains a sub-optimal result: 250 registers(LB:244)
+  Time to perform register binding: 0.85 seconds
+
+
+  Module binding information for function create_needs:
+    Number of modules instantiated: 673
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 5271
+    Estimated area of MUX21: 2285.3999999999996
+    Total estimated area: 7556.3999999999996
+    Estimated number of DSPs: 0
+    Slack computed in 0.01 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 2.01 seconds
+    Clique covering computation completed in 9.22 seconds
+  Time to perform module binding: 11.26 seconds
+
+
+  Register binding information for function create_needs:
+    Register allocation algorithm obtains a sub-optimal result: 252 registers(LB:244)
+  Time to perform register binding: 0.80 seconds
+
+
+  Connection Binding Information for function create_needs:
+    Number of allocated multiplexers (2-to-1 equivalent): 318
+  Time to perform interconnection binding: 0.04 seconds
+
+  Total number of flip-flops in function create_needs: 2730
+
+  Module allocation information for function main:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.02 seconds
+
+
+  Scheduling Information of function main:
+    Number of control steps: 5
+    Minimum slack: 1.1102230246251565e-16
+    Estimated max frequency (MHz): 200
+  Time to perform scheduling: 0.00 seconds
+
+
+  State Transition Graph Information of function main:
+    Number of states: 5
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function main:
+    Bound operations:5/5
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function main:
+    Number of storage values inserted: 0
+  Time to compute storage value information: 0.00 seconds
+
+
+  Module binding information for function main:
+    Number of modules instantiated: 5
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 4000
+    Estimated area of MUX21: 0
+    Total estimated area: 4000
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function main:
+    Register allocation algorithm obtains an optimal result: 0 registers
+  Time to perform register binding: 0.00 seconds
+
+  Total number of flip-flops in function main: 0
+[0mWarning: XML file "/home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR-RESULTS/KERNEL_INT/banker_algorithm/files/values_2/test.xml" cannot be opened, creating a stub with random values
+Warning: Simulation completed but it is not possible to determine if it is correct!
+  Total cycles             : 67 cycles
+  Number of executions     : 1
+  Average execution        : 67 cycles
