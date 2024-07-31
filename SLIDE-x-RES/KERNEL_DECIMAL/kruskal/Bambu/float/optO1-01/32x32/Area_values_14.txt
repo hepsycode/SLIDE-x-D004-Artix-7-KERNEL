@@ -1,0 +1,1009 @@
+ ==  Bambu executed with: bambu -O1 -fcse-follow-jumps -fno-tree-ter -ftree-vectorize -I/home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR-RESULTS/KERNEL_DECIMAL/kruskal/includes/values_14 --simulate --simulator=VERILATOR --clock-period=5 --device-name=xc7a100t-1csg324-VVD /home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/kruskal/frst.c 
+
+
+********************************************************************************
+                    ____                  _
+                   | __ )  __ _ _ __ ___ | |_   _   _
+                   |  _ \ / _` | '_ ` _ \| '_ \| | | |
+                   | |_) | (_| | | | | | | |_) | |_| |
+                   |____/ \__,_|_| |_| |_|_.__/ \__,_|
+
+********************************************************************************
+                         High-Level Synthesis Tool
+
+                         Politecnico di Milano - DEIB
+                          System Architectures Group
+********************************************************************************
+                Copyright (C) 2004-2020 Politecnico di Milano
+Version: PandA 0.9.7-dev - Revision 151822f6eb6b28b68ef7cde4c7c3c0add185ed9d-panda-0.9.7-dev
+
+Target technology = FPGA
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  The top function inferred from the specification is: main
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+  Functions to be synthesized:
+    __int32_to_float32if
+    __uint32_to_float32if
+    __float32_to_uint32_round_to_zeroif
+    __float32_addif
+    __float32_leif
+    __float32_ltif
+    __float32_gtif
+    is_connected
+    find_min
+    make_non_oriented
+    init_union_find
+    union_sets
+    count_edges
+    kruskal
+    main
+
+
+  Memory allocation information:
+    BRAM bitsize: 64
+    Spec may not exploit DATA bus width
+    All the data have a known address
+    Internal data may be accessed
+    DATA bus bitsize: 128
+    ADDRESS bus bitsize: 14
+    SIZE bus bitsize: 8
+    ALL pointers have been resolved
+    Internally allocated memory (no private memories): 10240
+    Internally allocated memory: 10240
+  Time to perform memory allocation: 0.00 seconds
+
+
+  Module allocation information for function __float32_addif:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.70 seconds
+
+
+  Module allocation information for function __float32_leif:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.06 seconds
+
+
+  Module allocation information for function init_union_find:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.03 seconds
+
+
+  Module allocation information for function is_connected:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.04 seconds
+
+
+  Module allocation information for function __float32_ltif:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.06 seconds
+
+
+  Module allocation information for function __float32_to_uint32_round_to_zeroif:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.08 seconds
+
+
+  Module allocation information for function __int32_to_float32if:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.07 seconds
+
+
+  Scheduling Information of function __float32_addif:
+    Number of control steps: 9
+    Minimum slack: 0.011999998999998707
+    Estimated max frequency (MHz): 200.48115473125873
+  Time to perform scheduling: 0.49 seconds
+
+
+  State Transition Graph Information of function __float32_addif:
+    Number of states: 7
+    Minimum number of cycles: 7
+    Maximum number of cycles 7
+    Done port is registered
+  Time to perform creation of STG: 0.03 seconds
+
+
+  Scheduling Information of function __float32_leif:
+    Number of control steps: 5
+    Minimum slack: 1.8070499989999984
+    Estimated max frequency (MHz): 313.18999661341689
+  Time to perform scheduling: 0.01 seconds
+
+
+  State Transition Graph Information of function __float32_leif:
+    Number of states: 3
+    Minimum number of cycles: 2
+    Maximum number of cycles 2
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function __float32_ltif:
+    Number of control steps: 5
+    Minimum slack: 1.9285999989999976
+    Estimated max frequency (MHz): 325.58442393514838
+  Time to perform scheduling: 0.01 seconds
+
+
+  State Transition Graph Information of function __float32_ltif:
+    Number of states: 4
+    Minimum number of cycles: 3
+    Maximum number of cycles 3
+    Parameters are registered
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function __float32_to_uint32_round_to_zeroif:
+    Number of control steps: 5
+    Minimum slack: 0.044999998999999957
+    Estimated max frequency (MHz): 201.8163470833872
+  Time to perform scheduling: 0.00 seconds
+
+
+  State Transition Graph Information of function __float32_to_uint32_round_to_zeroif:
+    Number of states: 3
+    Minimum number of cycles: 2
+    Maximum number of cycles 2
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function __int32_to_float32if:
+    Number of control steps: 8
+    Minimum slack: 0.5255999970000006
+    Estimated max frequency (MHz): 223.49365263041284
+  Time to perform scheduling: 0.02 seconds
+
+
+  State Transition Graph Information of function __int32_to_float32if:
+    Number of states: 7
+    Minimum number of cycles: 4
+    Maximum number of cycles 6
+    Parameters are registered
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function init_union_find:
+    Number of control steps: 6
+    Minimum slack: 0.10699999900000112
+    Estimated max frequency (MHz): 204.37359488976631
+  Time to perform scheduling: 0.01 seconds
+
+
+  State Transition Graph Information of function init_union_find:
+    Number of states: 4
+    Minimum number of cycles: 4
+    Maximum number of cycles 4
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function is_connected:
+    Number of control steps: 15
+    Minimum slack: 0.0050000000000044453
+    Estimated max frequency (MHz): 200.20020020020038
+  Time to perform scheduling: 0.01 seconds
+
+
+  State Transition Graph Information of function is_connected:
+    Number of states: 13
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function __float32_addif:
+    Bound operations:180/316
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function __float32_leif:
+    Bound operations:25/35
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function __float32_ltif:
+    Bound operations:24/34
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function __float32_to_uint32_round_to_zeroif:
+    Bound operations:27/29
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function __int32_to_float32if:
+    Bound operations:57/57
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function init_union_find:
+    Bound operations:13/19
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function is_connected:
+    Bound operations:71/84
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function __float32_addif:
+    Number of storage values inserted: 53
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function __float32_addif:
+    Register allocation algorithm obtains a sub-optimal result: 53 registers(LB:37)
+  Time to perform register binding: 0.01 seconds
+
+
+  Register binding information for function __float32_addif:
+    Register allocation algorithm obtains a sub-optimal result: 53 registers(LB:37)
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function __float32_addif:
+    Number of modules instantiated: 316
+    Number of possible conflicts for possible false paths introduced by resource sharing: 58
+    Estimated resources area (no Muxes and address logic): 1844
+    Estimated area of MUX21: 0
+    Total estimated area: 1844
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.01 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.02 seconds
+
+
+  Storage Value Information of function __float32_leif:
+    Number of storage values inserted: 8
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function __float32_leif:
+    Register allocation algorithm obtains an optimal result: 8 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function __float32_leif:
+    Register allocation algorithm obtains an optimal result: 8 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function __float32_leif:
+    Number of modules instantiated: 35
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 178
+    Estimated area of MUX21: 0
+    Total estimated area: 178
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Storage Value Information of function __float32_ltif:
+    Number of storage values inserted: 7
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function __float32_ltif:
+    Register allocation algorithm obtains an optimal result: 7 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function __float32_ltif:
+    Register allocation algorithm obtains an optimal result: 7 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function __float32_ltif:
+    Number of modules instantiated: 34
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 170
+    Estimated area of MUX21: 0
+    Total estimated area: 170
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Storage Value Information of function __float32_to_uint32_round_to_zeroif:
+    Number of storage values inserted: 4
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function __float32_to_uint32_round_to_zeroif:
+    Register allocation algorithm obtains an optimal result: 4 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function __float32_to_uint32_round_to_zeroif:
+    Register allocation algorithm obtains an optimal result: 4 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function __float32_to_uint32_round_to_zeroif:
+    Number of modules instantiated: 29
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 183
+    Estimated area of MUX21: 0
+    Total estimated area: 183
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Storage Value Information of function __int32_to_float32if:
+    Number of storage values inserted: 8
+  Time to compute storage value information: 0.00 seconds
+
+
+  Module binding information for function __int32_to_float32if:
+    Number of modules instantiated: 57
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 314
+    Estimated area of MUX21: 0
+    Total estimated area: 314
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Storage Value Information of function init_union_find:
+    Number of storage values inserted: 5
+  Time to compute storage value information: 0.00 seconds
+
+
+  Storage Value Information of function is_connected:
+    Number of storage values inserted: 29
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function __float32_addif:
+    Register allocation algorithm obtains a sub-optimal result: 53 registers(LB:37)
+  Time to perform register binding: 0.01 seconds
+
+  Total number of flip-flops in function __float32_addif: 419
+
+  Module allocation information for function count_edges:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.04 seconds
+
+
+  Scheduling Information of function count_edges:
+    Number of control steps: 13
+    Minimum slack: 0.0050000000000008926
+    Estimated max frequency (MHz): 200.20020020020024
+  Time to perform scheduling: 0.01 seconds
+
+
+  State Transition Graph Information of function count_edges:
+    Number of states: 17
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function count_edges:
+    Bound operations:58/68
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function count_edges:
+    Number of storage values inserted: 25
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function __float32_leif:
+    Register allocation algorithm obtains an optimal result: 8 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function __float32_leif:
+    Number of allocated multiplexers (2-to-1 equivalent): 1
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function __float32_leif: 70
+  All registers are without enable: function pipelining may come for free
+  Resources are not shared in function __float32_leif: function pipelining may come for free
+
+  Module allocation information for function find_min:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.07 seconds
+
+
+  Scheduling Information of function find_min:
+    Number of control steps: 19
+    Minimum slack: 0.0050000000000008926
+    Estimated max frequency (MHz): 200.20020020020024
+  Time to perform scheduling: 0.03 seconds
+
+
+  State Transition Graph Information of function find_min:
+    Number of states: 17
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function find_min:
+    Bound operations:85/113
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function find_min:
+    Number of storage values inserted: 43
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function __float32_ltif:
+    Register allocation algorithm obtains an optimal result: 7 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function __float32_ltif:
+    Number of allocated multiplexers (2-to-1 equivalent): 1
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function __float32_ltif: 69
+  All registers are without enable: function pipelining may come for free
+  Resources are not shared in function __float32_ltif: function pipelining may come for free
+
+  Module allocation information for function make_non_oriented:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.07 seconds
+
+
+  Scheduling Information of function make_non_oriented:
+    Number of control steps: 17
+    Minimum slack: 0.48359999499999884
+    Estimated max frequency (MHz): 221.41528626625703
+  Time to perform scheduling: 0.02 seconds
+
+
+  State Transition Graph Information of function make_non_oriented:
+    Number of states: 15
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function make_non_oriented:
+    Bound operations:58/82
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function make_non_oriented:
+    Number of storage values inserted: 35
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function __float32_to_uint32_round_to_zeroif:
+    Register allocation algorithm obtains an optimal result: 4 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function __float32_to_uint32_round_to_zeroif:
+    Number of allocated multiplexers (2-to-1 equivalent): 1
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function __float32_to_uint32_round_to_zeroif: 40
+  All registers are without enable: function pipelining may come for free
+  Resources are not shared in function __float32_to_uint32_round_to_zeroif: function pipelining may come for free
+
+  Register binding information for function __int32_to_float32if:
+    Register allocation algorithm obtains a sub-optimal result: 8 registers(LB:4)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function __int32_to_float32if:
+    Number of allocated multiplexers (2-to-1 equivalent): 1
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function __int32_to_float32if: 130
+
+  Module allocation information for function union_sets:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.05 seconds
+
+
+  Scheduling Information of function union_sets:
+    Number of control steps: 17
+    Minimum slack: 1.8873791418627661e-15
+    Estimated max frequency (MHz): 200.00000000000009
+  Time to perform scheduling: 0.01 seconds
+
+
+  State Transition Graph Information of function union_sets:
+    Number of states: 16
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function union_sets:
+    Bound operations:37/49
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function union_sets:
+    Number of storage values inserted: 18
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function count_edges:
+    Register allocation algorithm obtains a sub-optimal result: 18 registers(LB:14)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function count_edges:
+    Register allocation algorithm obtains a sub-optimal result: 18 registers(LB:14)
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function count_edges:
+    Number of modules instantiated: 68
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 2174
+    Estimated area of MUX21: 99
+    Total estimated area: 2273
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function count_edges:
+    Register allocation algorithm obtains a sub-optimal result: 18 registers(LB:14)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function count_edges:
+    Number of allocated multiplexers (2-to-1 equivalent): 12
+  Time to perform interconnection binding: 0.01 seconds
+
+  Total number of flip-flops in function count_edges: 174
+
+  Register binding information for function find_min:
+    Register allocation algorithm obtains a sub-optimal result: 34 registers(LB:23)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function find_min:
+    Register allocation algorithm obtains a sub-optimal result: 35 registers(LB:23)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function find_min:
+    Register allocation algorithm obtains a sub-optimal result: 35 registers(LB:23)
+  Time to perform register binding: 0.01 seconds
+
+
+  Module binding information for function find_min:
+    Number of modules instantiated: 111
+    Number of possible conflicts for possible false paths introduced by resource sharing: 4
+    Estimated resources area (no Muxes and address logic): 3300
+    Estimated area of MUX21: 198
+    Total estimated area: 3498
+    Estimated number of DSPs: 0
+    Slack computed in 0.01 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.01 seconds
+  Time to perform module binding: 0.02 seconds
+
+
+  Register binding information for function find_min:
+    Register allocation algorithm obtains a sub-optimal result: 35 registers(LB:23)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function find_min:
+    Number of allocated multiplexers (2-to-1 equivalent): 29
+  Time to perform interconnection binding: 0.01 seconds
+
+  Total number of flip-flops in function find_min: 338
+
+  Register binding information for function init_union_find:
+    Register allocation algorithm obtains an optimal result: 5 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function init_union_find:
+    Register allocation algorithm obtains an optimal result: 5 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function init_union_find:
+    Number of modules instantiated: 15
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 62
+    Estimated area of MUX21: 198
+    Total estimated area: 260
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function init_union_find:
+    Register allocation algorithm obtains an optimal result: 5 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function init_union_find:
+    Number of allocated multiplexers (2-to-1 equivalent): 10
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function init_union_find: 60
+
+  Register binding information for function is_connected:
+    Register allocation algorithm obtains a sub-optimal result: 25 registers(LB:23)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function is_connected:
+    Register allocation algorithm obtains a sub-optimal result: 25 registers(LB:23)
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function is_connected:
+    Number of modules instantiated: 83
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 222
+    Estimated area of MUX21: 99
+    Total estimated area: 321
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function is_connected:
+    Register allocation algorithm obtains a sub-optimal result: 25 registers(LB:23)
+  Time to perform register binding: 0.01 seconds
+
+
+  Connection Binding Information for function is_connected:
+    Number of allocated multiplexers (2-to-1 equivalent): 11
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function is_connected: 139
+
+  Register binding information for function make_non_oriented:
+    Register allocation algorithm obtains a sub-optimal result: 28 registers(LB:27)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function make_non_oriented:
+    Register allocation algorithm obtains a sub-optimal result: 30 registers(LB:27)
+  Time to perform register binding: 0.01 seconds
+
+
+  Register binding information for function make_non_oriented:
+    Register allocation algorithm obtains a sub-optimal result: 30 registers(LB:27)
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function make_non_oriented:
+    Number of modules instantiated: 79
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 2270
+    Estimated area of MUX21: 99
+    Total estimated area: 2369
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.01 seconds
+  Time to perform module binding: 0.01 seconds
+
+
+  Register binding information for function make_non_oriented:
+    Register allocation algorithm obtains a sub-optimal result: 30 registers(LB:27)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function make_non_oriented:
+    Number of allocated multiplexers (2-to-1 equivalent): 10
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function make_non_oriented: 202
+
+  Register binding information for function union_sets:
+    Register allocation algorithm obtains a sub-optimal result: 13 registers(LB:11)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function union_sets:
+    Register allocation algorithm obtains a sub-optimal result: 14 registers(LB:11)
+  Time to perform register binding: 0.01 seconds
+
+
+  Module binding information for function union_sets:
+    Number of modules instantiated: 47
+    Number of possible conflicts for possible false paths introduced by resource sharing: 4
+    Estimated resources area (no Muxes and address logic): 4142
+    Estimated area of MUX21: 99
+    Total estimated area: 4241
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.01 seconds
+  Time to perform module binding: 0.01 seconds
+
+
+  Register binding information for function union_sets:
+    Register allocation algorithm obtains a sub-optimal result: 14 registers(LB:11)
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function union_sets:
+    Number of allocated multiplexers (2-to-1 equivalent): 6
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function union_sets: 180
+
+  Module allocation information for function __float32_gtif:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.03 seconds
+
+
+  Module allocation information for function __uint32_to_float32if:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.07 seconds
+
+
+  Scheduling Information of function __float32_gtif:
+    Number of control steps: 5
+    Minimum slack: 1.6583499990000004
+    Estimated max frequency (MHz): 299.25336277011257
+  Time to perform scheduling: 0.00 seconds
+
+
+  State Transition Graph Information of function __float32_gtif:
+    Number of states: 3
+    Minimum number of cycles: 2
+    Maximum number of cycles 2
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function __uint32_to_float32if:
+    Number of control steps: 4
+    Minimum slack: 1.1015999899999986
+    Estimated max frequency (MHz): 256.5154928778075
+  Time to perform scheduling: 0.02 seconds
+
+
+  State Transition Graph Information of function __uint32_to_float32if:
+    Number of states: 2
+    Minimum number of cycles: 2
+    Maximum number of cycles 2
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function __float32_gtif:
+    Bound operations:19/19
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function __uint32_to_float32if:
+    Bound operations:43/45
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function __float32_gtif:
+    Number of storage values inserted: 3
+  Time to compute storage value information: 0.00 seconds
+
+
+  Module binding information for function __float32_gtif:
+    Number of modules instantiated: 19
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 68
+    Estimated area of MUX21: 0
+    Total estimated area: 68
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Storage Value Information of function __uint32_to_float32if:
+    Number of storage values inserted: 4
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function __uint32_to_float32if:
+    Register allocation algorithm obtains an optimal result: 4 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function __uint32_to_float32if:
+    Register allocation algorithm obtains an optimal result: 4 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function __uint32_to_float32if:
+    Number of modules instantiated: 45
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 231
+    Estimated area of MUX21: 0
+    Total estimated area: 231
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function __float32_gtif:
+    Register allocation algorithm obtains an optimal result: 3 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function __float32_gtif:
+    Number of allocated multiplexers (2-to-1 equivalent): 1
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function __float32_gtif: 34
+  All registers are without enable: function pipelining may come for free
+  Resources are not shared in function __float32_gtif: function pipelining may come for free
+
+  Register binding information for function __uint32_to_float32if:
+    Register allocation algorithm obtains an optimal result: 4 registers
+  Time to perform register binding: 0.00 seconds
+
+  Total number of flip-flops in function __uint32_to_float32if: 41
+  All registers are without enable: function pipelining may come for free
+  Resources are not shared in function __uint32_to_float32if: function pipelining may come for free
+
+  Module allocation information for function kruskal:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.08 seconds
+
+
+  Scheduling Information of function kruskal:
+    Number of control steps: 29
+    Minimum slack: 1.1102230246251565e-16
+    Estimated max frequency (MHz): 200
+  Time to perform scheduling: 0.02 seconds
+
+
+  State Transition Graph Information of function kruskal:
+    Number of states: 31
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function kruskal:
+    Bound operations:59/87
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function kruskal:
+    Number of storage values inserted: 36
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function kruskal:
+    Register allocation algorithm obtains a sub-optimal result: 30 registers(LB:14)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function kruskal:
+    Register allocation algorithm obtains a sub-optimal result: 33 registers(LB:14)
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function kruskal:
+    Register allocation algorithm obtains a sub-optimal result: 33 registers(LB:14)
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function kruskal:
+    Number of modules instantiated: 85
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 17141
+    Estimated area of MUX21: 99
+    Total estimated area: 17240
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.01 seconds
+
+
+  Register binding information for function kruskal:
+    Register allocation algorithm obtains a sub-optimal result: 33 registers(LB:14)
+  Time to perform register binding: 0.01 seconds
+
+
+  Connection Binding Information for function kruskal:
+    Number of allocated multiplexers (2-to-1 equivalent): 7
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function kruskal: 444
+
+  Module allocation information for function main:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.02 seconds
+
+
+  Scheduling Information of function main:
+    Number of control steps: 9
+    Minimum slack: 1.1102230246251565e-16
+    Estimated max frequency (MHz): 200
+  Time to perform scheduling: 0.01 seconds
+
+
+  State Transition Graph Information of function main:
+    Number of states: 11
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function main:
+    Bound operations:10/10
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function main:
+    Number of storage values inserted: 1
+  Time to compute storage value information: 0.00 seconds
+
+
+  Module binding information for function main:
+    Number of modules instantiated: 10
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 8008
+    Estimated area of MUX21: 0
+    Total estimated area: 8008
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function main:
+    Register allocation algorithm obtains an optimal result: 1 registers
+  Time to perform register binding: 0.00 seconds
+
+  Total number of flip-flops in function main: 32
+[0mWarning: XML file "/home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR-RESULTS/KERNEL_DECIMAL/kruskal/files/values_14/test.xml" cannot be opened, creating a stub with random values
+Warning: Simulation completed but it is not possible to determine if it is correct!
+  Total cycles             : 71959 cycles
+  Number of executions     : 1
+  Average execution        : 71959 cycles

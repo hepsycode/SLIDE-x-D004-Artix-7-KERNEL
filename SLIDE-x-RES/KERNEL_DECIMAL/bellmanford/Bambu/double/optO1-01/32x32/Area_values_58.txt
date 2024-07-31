@@ -1,0 +1,246 @@
+ ==  Bambu executed with: bambu -O1 -fcse-follow-jumps -fno-tree-ter -ftree-vectorize -I/home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR-RESULTS/KERNEL_DECIMAL/bellmanford/includes/values_58 --simulate --simulator=VERILATOR --clock-period=5 --device-name=xc7a100t-1csg324-VVD /home/ubuntu/Desktop/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/bellmanford/frst.c 
+
+
+********************************************************************************
+                    ____                  _
+                   | __ )  __ _ _ __ ___ | |_   _   _
+                   |  _ \ / _` | '_ ` _ \| '_ \| | | |
+                   | |_) | (_| | | | | | | |_) | |_| |
+                   |____/ \__,_|_| |_| |_|_.__/ \__,_|
+
+********************************************************************************
+                         High-Level Synthesis Tool
+
+                         Politecnico di Milano - DEIB
+                          System Architectures Group
+********************************************************************************
+                Copyright (C) 2004-2020 Politecnico di Milano
+Version: PandA 0.9.7-dev - Revision 151822f6eb6b28b68ef7cde4c7c3c0add185ed9d-panda-0.9.7-dev
+
+Target technology = FPGA
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  The top function inferred from the specification is: main
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+  Functions to be synthesized:
+    __float64_addif
+    __float64_ltif
+    __float64_geif
+    bellmanford
+    make_oriented
+    main
+
+
+  Memory allocation information:
+    BRAM bitsize: 64
+    Spec may not exploit DATA bus width
+    All the data have a known address
+    Internal data may be accessed
+    DATA bus bitsize: 128
+    ADDRESS bus bitsize: 15
+    SIZE bus bitsize: 8
+    ALL pointers have been resolved
+    Internally allocated memory (no private memories): 16384
+    Internally allocated memory: 16384
+  Time to perform memory allocation: 0.01 seconds
+
+
+  Module allocation information for function __float64_addif:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.83 seconds
+
+
+  Module allocation information for function __float64_ltif:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.07 seconds
+
+
+  Module allocation information for function __float64_geif:
+    Number of complex operations: 0
+    Number of complex operations: 0
+  Time to perform module allocation: 0.04 seconds
+
+
+  Scheduling Information of function __float64_addif:
+    Number of control steps: 14
+    Minimum slack: 0.042599993000033476
+    Estimated max frequency (MHz): 201.71864255213947
+  Time to perform scheduling: 0.79 seconds
+
+
+  State Transition Graph Information of function __float64_addif:
+    Number of states: 12
+    Minimum number of cycles: 12
+    Maximum number of cycles 12
+    Done port is registered
+  Time to perform creation of STG: 0.05 seconds
+
+
+  Scheduling Information of function __float64_geif:
+    Number of control steps: 5
+    Minimum slack: 1.9453499990000029
+    Estimated max frequency (MHz): 327.3697476544387
+  Time to perform scheduling: 0.00 seconds
+
+
+  State Transition Graph Information of function __float64_geif:
+    Number of states: 3
+    Minimum number of cycles: 2
+    Maximum number of cycles 2
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Scheduling Information of function __float64_ltif:
+    Number of control steps: 5
+    Minimum slack: 1.450599998999996
+    Estimated max frequency (MHz): 281.73775841501691
+  Time to perform scheduling: 0.01 seconds
+
+
+  State Transition Graph Information of function __float64_ltif:
+    Number of states: 4
+    Minimum number of cycles: 3
+    Maximum number of cycles 3
+    Parameters are registered
+    Done port is registered
+  Time to perform creation of STG: 0.00 seconds
+
+
+  Easy binding information for function __float64_addif:
+    Bound operations:232/409
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function __float64_geif:
+    Bound operations:22/22
+  Time to perform easy binding: 0.00 seconds
+
+
+  Easy binding information for function __float64_ltif:
+    Bound operations:24/34
+  Time to perform easy binding: 0.00 seconds
+
+
+  Storage Value Information of function __float64_addif:
+    Number of storage values inserted: 122
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function __float64_addif:
+    Register allocation algorithm obtains a sub-optimal result: 116 registers(LB:70)
+  Time to perform register binding: 0.03 seconds
+
+
+  Register binding information for function __float64_addif:
+    Register allocation algorithm obtains a sub-optimal result: 122 registers(LB:70)
+  Time to perform register binding: 0.03 seconds
+
+
+  Module binding information for function __float64_addif:
+    Number of modules instantiated: 409
+    Number of possible conflicts for possible false paths introduced by resource sharing: 306
+    Estimated resources area (no Muxes and address logic): 4758
+    Estimated area of MUX21: 0
+    Total estimated area: 4758
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.04 seconds
+    Clique covering computation completed in 0.03 seconds
+  Time to perform module binding: 0.08 seconds
+
+
+  Storage Value Information of function __float64_geif:
+    Number of storage values inserted: 3
+  Time to compute storage value information: 0.00 seconds
+
+
+  Module binding information for function __float64_geif:
+    Number of modules instantiated: 22
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 117
+    Estimated area of MUX21: 0
+    Total estimated area: 117
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Storage Value Information of function __float64_ltif:
+    Number of storage values inserted: 7
+  Time to compute storage value information: 0.00 seconds
+
+
+  Register binding information for function __float64_ltif:
+    Register allocation algorithm obtains an optimal result: 7 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Register binding information for function __float64_ltif:
+    Register allocation algorithm obtains an optimal result: 7 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Module binding information for function __float64_ltif:
+    Number of modules instantiated: 34
+    Number of possible conflicts for possible false paths introduced by resource sharing: 0
+    Estimated resources area (no Muxes and address logic): 247
+    Estimated area of MUX21: 0
+    Total estimated area: 247
+    Estimated number of DSPs: 0
+    Slack computed in 0.00 seconds
+    False-loop computation completed in 0.00 seconds
+    Weight computation completed in 0.00 seconds
+    Clique covering computation completed in 0.00 seconds
+  Time to perform module binding: 0.00 seconds
+
+
+  Register binding information for function __float64_addif:
+    Register allocation algorithm obtains a sub-optimal result: 122 registers(LB:70)
+  Time to perform register binding: 0.03 seconds
+
+  Total number of flip-flops in function __float64_addif: 2471
+
+  Register binding information for function __float64_geif:
+    Register allocation algorithm obtains an optimal result: 3 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function __float64_geif:
+    Number of allocated multiplexers (2-to-1 equivalent): 1
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function __float64_geif: 66
+  All registers are without enable: function pipelining may come for free
+  Resources are not shared in function __float64_geif: function pipelining may come for free
+
+  Register binding information for function __float64_ltif:
+    Register allocation algorithm obtains an optimal result: 7 registers
+  Time to perform register binding: 0.00 seconds
+
+
+  Connection Binding Information for function __float64_ltif:
+    Number of allocated multiplexers (2-to-1 equivalent): 1
+  Time to perform interconnection binding: 0.00 seconds
+
+  Total number of flip-flops in function __float64_ltif: 133
+  All registers are without enable: function pipelining may come for free
+  Resources are not shared in function __float64_ltif: function pipelining may come for free
+
+  Module allocation information for function bellmanford:
+    Operation for which does not exist a functional unit in the resource library: vec_unpack_float_lo_expr in vertex: bellmanford_26084_26628 with vertex type: VECTOR_INT and vertex prec: 32:4 32:4
+    Operation for which does not exist a functional unit in the resource library: vec_unpack_float_hi_expr in vertex: bellmanford_26084_26629 with vertex type: VECTOR_INT and vertex prec: 32:4 32:4
+    Operation for which does not exist a functional unit in the resource library: vec_unpack_float_lo_expr in vertex: bellmanford_26084_26630 with vertex type: VECTOR_INT and vertex prec: 32:4 32:4
+    Operation for which does not exist a functional unit in the resource library: vec_unpack_float_hi_expr in vertex: bellmanford_26084_26631 with vertex type: VECTOR_INT and vertex prec: 32:4 32:4
+    Operation for which does not exist a functional unit in the resource library: vec_unpack_float_lo_expr in vertex: bellmanford_26084_26632 with vertex type: VECTOR_INT and vertex prec: 32:4 32:4
+    Operation for which does not exist a functional unit in the resource library: vec_unpack_float_hi_expr in vertex: bellmanford_26084_26633 with vertex type: VECTOR_INT and vertex prec: 32:4 32:4
+    Operation for which does not exist a functional unit in the resource library: vec_unpack_float_lo_expr in vertex: bellmanford_26084_26634 with vertex type: VECTOR_INT and vertex prec: 32:4 32:4
+    Operation for which does not exist a functional unit in the resource library: vec_unpack_float_hi_expr in vertex: bellmanford_26084_26635 with vertex type: VECTOR_INT and vertex prec: 32:4 32:4
+error -> Vertices not completely allocated
+	virtual DesignFlowStep_Status allocation::InternalExec()
+	../../../src/HLS/module_allocation/allocation.cpp:1973
+Please report bugs to <panda-info@polimi.it>
+
